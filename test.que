@@ -1,0 +1,11 @@
+#!/bin/sh -f 
+#$ -V
+#$ -S /bin/sh
+#$ -N test
+#$  -j y -o test.qlog
+#$ -m beas
+#$ -q "abaqus.q"
+#$ -pe mpi 4
+cd $SGE_O_WORKDIR
+
+abaqus python /opt/apps/Abaqus/6.11/6.11-1/site/abaJobHandler.py test local
