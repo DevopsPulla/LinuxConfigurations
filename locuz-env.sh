@@ -1,0 +1,16 @@
+#!/bin/sh
+
+
+alias qstat="qstat -u '*'"
+alias qerrors='qstat -f -explain E'
+alias qsummary='qstat -g c'
+alias qclear='qmod -c "*"'
+alias full="lmutil lmstat -a -c 28001@INBLCORLIC02"
+alias lic="lmutil lmstat -a -c 28001@INBLCORLIC02 | grep -i 'licenses'"
+
+export LM_LICENSE_FILE=28001@INBLCORLIC01:28001@INBLCORLIC02:28001@INBLCORLIC03:6915@172.16.4.181:6915@172.16.4.182:6915@172.16.4.183:28007@192.168.5.61:28017@INBLCORLIC01:28017@INBLCORLIC02:28017@INBLCORLIC03
+export MSC_LICENSE_FILE=28015@BHIMA,28015@INBLCORLIC01,28015@INBLCORLIC02,28015@INBLCORLIC03,28001@KAVERI,28001@GANGA,28001@TUNGA
+export MODULEPATH=/opt/sge/module
+export PATH=$PATH:/opt/apps/Abaqus/6.11/Commands:/opt/sge/launcher
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/apps/sc03-lib/
+export MSC_LICENSE_FILE=$MSC_LICENSE_FILE:28017@INBLCORLIC01:28017@INBLCORLIC02:28017@INBLCORLIC03
