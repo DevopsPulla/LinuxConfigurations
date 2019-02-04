@@ -1,0 +1,52 @@
+#!/bin/bash
+qstat -g c
+
+read -p " Enter the name of the queue: " queue
+echo
+
+
+read -p " Enter the name of the job: " name
+echo
+
+read -p "Please enter number of cores to use: " num_cores 
+
+read -p "Enter inpute file name: " INPUTEFILE
+echo 
+read -p "Enter Output file name: " OUTPUTEFILE
+echo
+read -p "Enter the license feature name 'ansys' or 'meba' or 'ane3fl': " FEATURE
+echo 
+
+
+
+
+if [[ -z "$num_cores" ]]; then 
+echo "using single cores"
+num_cores=1
+fi
+
+echo
+echo " Command line to be executed is as below "
+echo "Using /opt/apps/ansys_inc/v145/ansys/bin/ansys145 "
+
+exec 3>&1 >ansys_job_submit_script.sh
+echo "#!/bin/bash"
+echo "#$ -N ansysJOB"
+echo "#$ -cwd"
+echo "#$ -q `echo $queue`"
+echo "#$ -S /bin/bash"
+echo '#$ -e err.$JOB_ID.$JOB_NAME'
+echo '#$ -o out.$JOB_ID.$JOB_NAME'
+echo "#$ -pe fea `echo $num_cores`"
+
+##echo "#$ -V"
+echo
+echo "export ANSWAIT=1"
+echo "/opt/apps/ansys_inc/v145/ansys/bin/ansys145  -p `echo $FEATURE` -b < `echo $INPUTEFILE` > `echo $OUTPUTEFILE` -np \$NSLOTS"
+echo
+
+exec >&3-
+
+
+qsub ansys_job_submit_script.sh
+exit 0
