@@ -1,0 +1,27 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds intel-15.0.0.090 to your environment variables"
+
+
+set               root                 /opt/apps/intel/compilers_and_libraries_2017.6.256
+
+prepend-path      PATH                 $root/linux/bin/intel64
+prepend-path      PATH                 $root/linux/mpi/bin64
+prepend-path      PATH                 /opt/apps/glibc/2.14/bin
+
+
+prepend-path      LD_LIBRARY_PATH      $root/linux/compiler/lib/intel64
+prepend-path      LD_LIBRARY_PATH      $root/linux/mpi/lib64
+prepend-path      LD_LIBRARY_PATH      /opt/apps/glibc/2.14/lib
+
+
+
+

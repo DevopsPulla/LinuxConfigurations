@@ -1,0 +1,16 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds sc03_16E0 to your environment variables,"
+}
+
+module-whatis "sc03_16E0"
+
+
+prepend-path	  PATH			/opt/apps/sc03/16E0
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/sc03-lib

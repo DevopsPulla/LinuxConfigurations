@@ -1,0 +1,30 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds openmpi-1.2.9 with intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds openmpi-1.2.9 with intel-15.0.0.090 to your environment variables"
+
+
+
+prepend-path      PATH                 /opt/apps/intel/composer_xe_2015.0.090/bin/intel64
+prepend-path      PATH                 /opt/apps/openmpi-1.2.9/intel-15.0.0.090/bin
+
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/intel/composer_xe_2015.0.090/compiler/lib/intel64
+prepend-path      LD_LIBRARY_PATH      /opt/apps/openmpi-1.2.9/intel-15.0.0.090/lib
+
+
+prepend-path      LIBRARY_PATH         /opt/apps/intel/composer_xe_2015.0.090/compiler/lib/intel64
+prepend-path      LIBRARY_PATH         /opt/apps/openmpi-1.2.9/intel-15.0.0.090/lib
+
+
+setenv           MPI_HOME          /opt/apps/openmpi-1.2.9/intel-15.0.0.090
+setenv           MPI_RUN           /opt/apps/openmpi-1.2.9/intel-15.0.0.090/bin/mpirun
+
+

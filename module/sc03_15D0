@@ -1,0 +1,16 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables"
+
+
+prepend-path	  PATH			/opt/apps/sc03/15D0
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/sc03-lib

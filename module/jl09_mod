@@ -1,0 +1,22 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds sc03_16E0 to your environment variables,"
+}
+
+module-whatis "sc03_16E0"
+
+
+prepend-path	  PATH			/usr/rreng/bin/jl09_load
+
+prepend-path      LD_LIBRARY_PATH     /opt/apps/ansys_inc/v145/polyflow/polyflow14.5.0/lnamd64/libs/
+prepend-path      LD_LIBRARY_PATH     /opt/apps/ansys_inc/v150/polyflow/polyflow15.0.0/lnamd64/libs/
+prepend-path      LD_LIBRARY_PATH     /opt/apps/ansys_inc/v161/polyflow/polyflow16.1.0/lnamd64/libs/
+prepend-path      LD_LIBRARY_PATH     /opt/apps/ansys_inc/v162/polyflow/polyflow16.2.0/lnamd64/libs/
+prepend-path      LD_LIBRARY_PATH     /opt/apps/ansys_inc/v172/polyflow/polyflow17.2.0/lnamd64/libs/
+prepend-path      LD_LIBRARY_PATH     /opt/apps/sc03-lib/
+

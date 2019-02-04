@@ -1,0 +1,90 @@
+  Operating system:LINUX interactive 64Bit
+                 **********************************************
+                 **********************************************
+                 **                                          **
+                 **           (c) Rolls-Royce plc            **
+                 **                                          **
+                 **            SC03 Version 16E0             **
+                 **                                          **
+                 **                                          **
+                 **         LINUX interactive 64Bit          **
+                 **                                          **
+                 **                                          **
+                 **           18-Jun-18   09:50:56           **
+                 **                                          **
+                 **                                          **
+                 **********************************************
+                 **********************************************
+ 
+vvvvvvvvvvvvvvvvvvvvvvvvv Start of System Information vvvvvvvvvvvvvvvvvvvvvvvvv
+^^^^^^^^^^^^^^^^^^^^^^^^^^ End of System Information ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Checking for valid licence...
+Acquired v1.0 license in 0.113816 seconds
+Input line:--help
+ Allocated 0 MBytes at address 82210944 and offset 0
+ scd ver 16E0 64BIT 1 integer per real. Dynamic memory allocation
+ Byte swapped binary IO is used
+ Thread locking structure initialised.
+ Machine Info
+  Local machine name   : inblrmaster01.local
+  Network address      : 192.168.0.1
+  Current free memory  : 386621 MB
+  Total CPU count      : 32
+  Stacksize set to 33554432 bytes per thread
+Filenames now unreferenced
+ User preference file:/root/.sc03init
+ Temporary directory :/usr/tmp
+ User Home directory :/root
+Requesting material database access...
+CT88INI: Version  5.0     found YYYYYYYYYYYYYYY ini >/usr/rreng/data/ct87/ct88v5@0.ini                           <
+   Monitor on: T
+   Virtual on: T
+   Commit_File: ws >
+ /var/rrdata/prod/eng-disp/commit/commit_files                                  
+                                                                                
+                                                                                
+                   <
+   Property_Map: ws >
+ /var/rrdata/prod/eng-disp/commit/support_files/prop_mapping                    
+                                                                                
+                                                                                
+                   <
+   Substance_Map: ws >
+ /var/rrdata/prod/eng-disp/commit/support_files/sub_mapping                     
+                                                                                
+                                                                                
+                   <
+   Prop_Mod_Info: ws >
+ /var/rrdata/prod/eng-disp/commit/support_files/prop_mod_info                   
+                                                                                
+                                                                                
+                   <
+   Virtual_File: ws >
+ /usr/tmp/ct88_8LJcXL                                                           
+                                                                                
+                                                                                
+                   <
+   Virtual_File: len >          20 <
+   Monitor_File: ws >
+ /var/rrdata/prod/eng-disp/commit/monitor/ct88.log                              
+                                                                                
+                                                                                
+                   <
+   Index_File: ws >
+ /var/rrdata/prod/eng-disp/commit/support_files/index                           
+                                                                                
+                                                                                
+                   <
+   Hierarchy_File: ws >
+ /var/rrdata/prod/eng-disp/commit/support_files/hierarchy                       
+                                                                                
+                                                                                
+                   <
+   Default_Access_Mode:  >           1 <
+   No. Commit_Ver:            3   3.00000000000000        3.10000000000000     
+   3.20000000000000     
+   No. User Ver:            4   2.00000000000000        3.00000000000000     
+   3.10000000000000        3.30000000000000     
+Material database (Rev5) responded in 3.13640E-02 seconds
+Material database successfully initialised.
+Mesa Project:2.1 Mesa 10.4.3 OpenGL

@@ -1,0 +1,25 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds intel-15.0.0.090 to your environment variables"
+
+
+
+prepend-path      PATH                 /opt/apps/intel/composer_xe_2015.2.164/bin/intel64
+
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/intel/composer_xe_2015.2.164/compiler/lib/intel64
+
+
+prepend-path      LIBRARY_PATH         /opt/apps/intel/composer_xe_2015.2.164/compiler/lib/intel64
+
+
+
+

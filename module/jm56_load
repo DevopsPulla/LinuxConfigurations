@@ -1,0 +1,23 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables"
+
+
+prepend-path      PATH                 /opt/apps/hydra/jm56_load
+
+
+prepend-path      LD_LIBRARY_PATH      /opt/sge/JM52-v7.1.0
+prepend-path      LIBRARY_PATH         /opt/sge/JM52-v7.1.0
+
+
+
+
+

@@ -1,0 +1,36 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables"
+
+
+prepend-path      PATH                 /opt/apps/hydra/jm70_7.2.5_load
+
+
+prepend-path      PATH                 /opt/apps/intel/composer_xe_2015.2.164/bin/intel64
+prepend-path      PATH                 /opt/apps/openmpi-1.6.5/intel-15.0.2.164/bin
+
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/intel/composer_xe_2015.2.164/compiler/lib/intel64
+prepend-path      LD_LIBRARY_PATH      /opt/apps/openmpi-1.6.5/intel-15.0.2.164/lib
+prepend-path      LD_LIBRARY_PATH                       /opt/apps/ss02/Ver5.2.0/Intel/lib/
+prepend-path      LD_LIBRARY_PATH                       /opt/apps/openmpi-1.6.5-bin/lib/
+
+
+prepend-path      LIBRARY_PATH         /opt/apps/intel/composer_xe_2015.2.164/compiler/lib/intel64
+prepend-path      LIBRARY_PATH         /opt/apps/openmpi-1.6.5/intel-15.0.2.164/lib
+prepend-path      LIBRARY_PATH                       /opt/apps/ss02/Ver5.2.0/Intel/lib/
+prepend-path      LIBRARY_PATH                       /opt/apps/openmpi-1.6.5-bin/lib/
+
+
+setenv           MPI_HOME          /opt/apps/openmpi-1.6.5/intel-15.0.2.164
+setenv           MPI_RUN           /opt/apps/openmpi-1.6.5/intel-15.0.2.164/bin/mpirun
+
+

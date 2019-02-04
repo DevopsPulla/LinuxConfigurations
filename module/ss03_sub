@@ -1,0 +1,47 @@
+#%Module -*- tcl -*-
+##
+## dot modulefile
+##
+proc ModulesHelp { } {
+  global openmpiversion
+
+  puts stderr "\tAdds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables,"
+}
+
+module-whatis "adds openmpi-1.2.6 with intel-15.0.0.090 to your environment variables"
+
+
+prepend-path	  PATH			/opt/apps/ss02/Ver5.2.0
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/tgrid/tgrid16.1.0/lnamd64/syslib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/TurboGrid/tools/qt-4.8.4/lib/Linux-amd64
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/Framework/bin/Linux64/Mesa
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/Mesa-7.1/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/qwt-5.2.3/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib/5.8.0/unicore/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib/5.8.0/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/gcc-4.6.1-1/Linux-amd64/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/qt-4.8.4/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/openmpi-1.6.5/intel-15.0.2.164/lib
+
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/tgrid/tgrid16.1.0/lnamd64/syslib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/TurboGrid/tools/qt-4.8.4/lib/Linux-amd64
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/Framework/bin/Linux64/Mesa
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/Mesa-7.1/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/qwt-5.2.3/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib/5.8.0/unicore/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/perl-5.8.0-1/lib/5.8.0/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/gcc-4.6.1-1/Linux-amd64/lib
+prepend-path      LIBRARY_PATH      /opt/apps/ansys_inc/v161/CFD-Post/tools/qt-4.8.4/lib
+
+##prepend-path      PYTHONHOME          /opt/apps/ss02/Ver5.2.0/Python
+
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/VTK/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/Intel/lib
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/Python/lib 
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/ss02/lib 
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/ss02/plugins 
+prepend-path      LD_LIBRARY_PATH      /opt/apps/ss02/Ver5.2.0/Mesa/lib 
+prepend-path      LD_LIBRARY_PATH      /opt/apps/openmpi-1.6.5/intel-15.0.2.164/lib 
