@@ -1,0 +1,63 @@
+# Ganana managed file, any changes will be overwritten
+# If you need to add entries use
+# /etc/hosts.local
+######################## LOOPBACK INTERFACES #######################
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+########################## ETHERNET HOSTS ##########################
+192.168.0.3 ganana.local ganana puppet
+192.168.0.5 inblrmaster00.local inblrmaster00
+192.168.0.23 inblrhpc13.local inblrhpc13
+192.168.0.30 inblrhpc20.local inblrhpc20
+192.168.0.36 inblrhpc26.local inblrhpc26
+192.168.0.34 inblrhpc24.local inblrhpc24
+192.168.0.38 inblrhpc28.local inblrhpc28
+192.168.0.22 inblrhpc12.local inblrhpc12
+192.168.0.32 inblrhpc22.local inblrhpc22
+192.168.0.35 inblrhpc25.local inblrhpc25
+192.168.0.29 inblrhpc19.local inblrhpc19
+192.168.0.17 inblrhpc07.local inblrhpc07
+192.168.0.40 inblrhpc30.local inblrhpc30
+192.168.0.37 inblrhpc27.local inblrhpc27
+192.168.0.10 inblrhpc00.local inblrhpc00
+192.168.0.16 inblrhpc06.local inblrhpc06
+192.168.0.25 inblrhpc15.local inblrhpc15
+192.168.0.13 inblrhpc03.local inblrhpc03
+192.168.0.15 inblrhpc05.local inblrhpc05
+192.168.0.33 inblrhpc23.local inblrhpc23
+192.168.0.27 inblrhpc17.local inblrhpc17
+192.168.0.20 inblrhpc10.local inblrhpc10
+192.168.0.1 inblrmaster01.local inblrmaster01
+192.168.0.2 inblrmaster02.local inblrmaster02
+192.168.0.11 inblrhpc01.local inblrhpc01
+192.168.0.31 inblrhpc21.local inblrhpc21
+192.168.0.28 inblrhpc18.local inblrhpc18
+192.168.0.24 inblrhpc14.local inblrhpc14
+192.168.0.18 inblrhpc08.local inblrhpc08
+192.168.0.39 inblrhpc29.local inblrhpc29
+192.168.0.19 inblrhpc09.local inblrhpc09
+192.168.0.21 inblrhpc11.local inblrhpc11
+192.168.0.26 inblrhpc16.local inblrhpc16
+192.168.0.42 inblrhpc31.local inblrhpc31
+192.168.0.12 inblrhpc02.local inblrhpc02
+192.168.0.14 inblrhpc04.local inblrhpc04
+###################### FROM LOCAL HOSTS FILE #######################
+# License Server
+192.168.5.81    INBLCORLIC01
+192.168.5.82    INBLCORLIC02
+192.168.5.83    INBLCORLIC03
+172.16.4.181    ORCHID
+172.16.4.182    TULIP
+172.16.4.183    DALE
+192.168.5.11    devil
+192.168.5.8     ghost
+192.168.5.9     cobra
+192.168.5.33    Bhima
+192.168.5.61    kaveri
+192.168.5.62    ganga
+192.168.5.63    tunga
+
+192.168.0.4     inblrnfs.local          inblrnfs
+192.168.0.10	inblrhpc00.local	inblrhpc00
+
+192.168.4.29 proxy.quest-rr01.com

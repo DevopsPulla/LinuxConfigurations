@@ -1,0 +1,197 @@
+
+defaults {
+        user_friendly_names yes
+# Begin Dell MD Modification
+        max_fds             8192
+  polling_interval      5
+  queue_without_daemon  no
+# End Dell MD Modification
+}
+blacklist {
+        devnode "^(ram|raw|loop|fd|md|dm-|sr|scd|st)[0-9]*"
+        devnode "^hd[a-z]"
+        devnode "^dcssblk[0-9]*"
+        device {
+                vendor "DGC"
+                product "LUNZ"
+        }
+        device {
+                vendor "IBM"
+                product "S/390.*"
+        }
+        # don't count normal SATA devices as multipaths
+        device {
+                vendor  "ATA"
+        }
+        # don't count 3ware devices as multipaths
+        device {
+                vendor  "3ware"
+        }
+        device {
+                vendor  "AMCC"
+        }
+        # nor highpoint devices
+        device {
+                vendor  "HPT"
+        }
+        wwid "36c81f660eda2c5001b567a701433049b"
+        wwid "36c81f660eda2c5001b567a4911da82e7"
+        device {
+                vendor PLDS
+                product DVD+-RW_DS-8ABSH
+        }
+        wwid "*"
+# Begin Dell MD Modification
+        device {
+                vendor  "*"
+                product "Universal Xport"
+        }
+        device {
+                vendor  "*"
+                product "MD3000"
+        }
+        device {
+                vendor  "*"
+                product "MD3000i"
+        }
+        device {
+                vendor  "*"
+                product "Virtual Disk"
+        }
+# End Dell MD Modification
+}
+blacklist_exceptions {
+wwid "3600a0980009cda970000035e57a37fb6"
+wwid "3600a0980009ca6640000048157a38039"
+
+# Begin Dell MD Modification
+        device {
+                vendor  "*"
+                product "Universal Xport"
+        }
+        device {
+                vendor  "*"
+                product "MD3000"
+        }
+        device {
+                vendor  "*"
+                product "MD3000i"
+        }
+        device {
+                vendor  "*"
+                product "Virtual Disk"
+        }
+# End Dell MD Modification
+}
+multipaths {
+        multipath {
+                uid 0
+                gid 0
+                wwid "3600a0980009cda970000035e57a37fb6"
+                alias fea
+                mode 0600
+        }
+        multipath {
+                uid 0
+                gid 0
+                wwid "3600a0980009ca6640000048157a38039"
+                alias cfd
+                mode 0600
+        }
+}
+# Begin Dell MD Modification
+devices {
+        device {
+                vendor                "DELL"
+                product               "MD32xxi"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD32xx"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD36xxi"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD36xxf"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD34xx"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD38xxi"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+        device {
+                vendor                "DELL"
+                product               "MD38xxf"
+                path_grouping_policy  group_by_prio
+                prio                  rdac
+                path_checker          rdac
+                path_selector         "round-robin 0"
+                hardware_handler      "1 rdac"
+                failback              immediate
+                features              "2 pg_init_retries 50"
+                no_path_retry         30
+                rr_min_io             100
+        }
+}
+# End Dell MD Modification
+

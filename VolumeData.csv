@@ -1,0 +1,16 @@
+Name,cfd1,cfd2,fea
+Pool,A,A,A
+Size,30.7TB,25.9TB,30.7TB
+Allocated Size,0B,0B,0B
+Class,Virtual,Virtual,Virtual
+Serial Number,00c0ff434e9d0000f5c8655c01000000,00c0ff434e9d0000f6c8655c01000000,00c0ff434e9d0000f3c8655c01000000
+Write Policy,write-back,write-back,write-back
+Optimization,standard,standard,standard
+Read-ahead Size,Adaptive,Adaptive,Adaptive
+Type,base,base,base
+Tier Affinity,No Affinity,No Affinity,No Affinity
+Retention Priority,medium,medium,medium
+WWN,600C0FF000434E9DF5C8655C01000000,600C0FF000434E9DF6C8655C01000000,600C0FF000434E9DF3C8655C01000000
+Health,OK,OK,OK
+Reason,,,
+Recommendation,,,
