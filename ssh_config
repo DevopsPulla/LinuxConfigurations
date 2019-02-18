@@ -1,0 +1,10 @@
+# Ganana managed file, any changes will be overwritten
+
+Host *
+	CheckHostIP no
+	ForwardAgent yes
+	ForwardX11 yes
+	ForwardX11Trusted yes
+	Protocol 2,1
+	StrictHostKeyChecking no
+	UsePrivilegedPort no
