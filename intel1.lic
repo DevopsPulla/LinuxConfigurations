@@ -1,0 +1,15 @@
+PACKAGE IBDB034BC INTEL 2019.0522 43682B8A1EF6 COMPONENTS="AdvXEl \
+	ArBBL CCompL Comp-CL Comp-DCAF Comp-FL Comp-OpenMP \
+	Comp-PointerChecker DAAL-L DbgL FCompL IClsTktL IClsValL \
+	ITrAnlL ITrAnlW ITrColL MKernL MPassL PerfAnl PerfPrimL \
+	StaticAnlL ThreadAnlGui ThreadBB" OPTIONS=SUITE ck=131 \
+	SIGN=7948FBEEBED8
+INCREMENT IBDB034BC INTEL 2019.0522 22-may-2019 uncounted \
+	43FA9BAC012F VENDOR_STRING="SUPPORT=ENA \
+	https://registrationcenter.intel.com" HOSTID=ID=06687654 \
+	PLATFORMS="i86_r i86_re it64_lr it64_re amd64_re i86_mac \
+	x64_mac" ck=175 SN=SMSAZ5TJZLKJ SIGN=3066634CAB96
+#
+# SerialNumber=DN4G-Z5TJZLKJ
+#
+
